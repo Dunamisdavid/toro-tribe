@@ -1,0 +1,29 @@
+/* Tailwind theme + utilities. Preflight is left out on purpose: toro.css has its own reset. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "../styles/toro.css";
+
+/* ToroNet brand tokens for Tailwind utilities (bg-toro-green, text-toro-gold, …).
+   Two colours only: Dark Green #1A4314 and Golden Brown #C68642, plus their shades. */
+@theme {
+  --color-toro-green-950: #0A1C08;
+  --color-toro-green-900: #0D230A;
+  --color-toro-green-850: #112C0E;
+  --color-toro-green-800: #163812;
+  --color-toro-green: #1A4314;
+  --color-toro-green-600: #2A5522;
+  --color-toro-green-500: #3E7232;
+
+  --color-toro-gold-900: #5D3F1F;
+  --color-toro-gold-700: #9C6830;
+  --color-toro-gold: #C68642;
+  --color-toro-gold-300: #DDAA72;
+  --color-toro-cream: #F6EEE2;
+  --color-toro-muted: #CDBFA6;
+  --color-toro-dim: #9C9A83;
+
+  --font-display: 'Unbounded', system-ui, sans-serif;
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
